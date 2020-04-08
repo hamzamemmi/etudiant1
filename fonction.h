@@ -30,8 +30,10 @@ typedef struct
 }temps;
 typedef struct
 {	
- SDL_Surface *perso,*d[8],*g[8];
- SDL_Rect *posperso;
+ SDL_Surface *perso;
+ SDL_Rect posperso;
+ SDL_Rect anime_perso[16];
+ int frameNumber, frameTimer;
 }perso;
 
 void initialiserperso(perso *p);
